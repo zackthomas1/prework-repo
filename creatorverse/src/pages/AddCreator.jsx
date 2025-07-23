@@ -48,45 +48,45 @@ export default function AddCreator() {
   }
 
   return (
-    <div className="max-w-lg mx-auto">
-      <h1 className="text-3xl font-bold mb-8 text-center">Add New Creator</h1>
+    <div className="max-w-2xl mx-auto text-center">
+      <h1 className="text-4xl font-bold mb-12">Add New Creator</h1>
       
-      <form onSubmit={handleSubmit} className="space-y-6 bg-gray-800 p-8 rounded-lg shadow-lg">
+      <form onSubmit={handleSubmit} className="space-y-6 bg-gray-800 p-8 rounded-lg shadow-lg text-left">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-300">
-            Name
+          <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-300 text-center">
+            Creator Name
           </label>
           <input
             type="text"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-center"
             placeholder="Enter creator's name"
             required
           />
         </div>
 
         <div>
-          <label htmlFor="imageURL" className="block text-sm font-medium mb-2 text-gray-300">
-            Image
+          <label htmlFor="imageURL" className="block text-sm font-medium mb-2 text-gray-300 text-center">
+            Profile Image
           </label>
-          <p className="text-xs text-gray-400 mb-2">Provide a link to an image of your creator. Be sure to include the http://</p>
+          <p className="text-xs text-gray-400 mb-2 text-center">Provide a link to an image of your creator</p>
           <input
             type="url"
             id="imageURL"
             value={imageURL}
             onChange={(e) => setImageURL(e.target.value)}
-            className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-center"
             placeholder="https://example.com/image.jpg"
           />
         </div>
 
         <div>
-          <label htmlFor="description" className="block text-sm font-medium mb-2 text-gray-300">
+          <label htmlFor="description" className="block text-sm font-medium mb-2 text-gray-300 text-center">
             Description
           </label>
-          <p className="text-xs text-gray-400 mb-2">Provide a description of the creator. Who are they? What makes them interesting?</p>
+          <p className="text-xs text-gray-400 mb-2 text-center">Describe the creator and what makes them interesting</p>
           <textarea
             id="description"
             value={description}
@@ -99,28 +99,28 @@ export default function AddCreator() {
         </div>
 
         <div>
-          <label htmlFor="url" className="block text-sm font-medium mb-2 text-gray-300">
+          <label htmlFor="url" className="block text-sm font-medium mb-2 text-gray-300 text-center">
             Social Media Link
           </label>
-          <p className="text-xs text-gray-400 mb-2">Provide a link to the creator's social media profile. Be sure to include the http://</p>
+          <p className="text-xs text-gray-400 mb-2 text-center">Link to their channel, profile, or website</p>
           <input
             type="url"
             id="url"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
-            className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-center"
             placeholder="https://example.com"
             required
           />
         </div>
 
-        <div className="flex gap-4 pt-4">
+        <div className="flex gap-4 pt-6">
           <button
             type="submit"
             disabled={loading}
-            className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-lg"
           >
-            {loading ? 'Adding...' : 'SUBMIT'}
+            {loading ? 'Adding Creator...' : 'Add Creator'}
           </button>
         </div>
       </form>
