@@ -13,13 +13,13 @@ export default function App() {
           <div className="space-x-4">
             <Link 
               to="/" 
-              className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg transition-colors"
+              className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-xl transition-colors font-medium shadow-lg hover:shadow-xl"
             >
               Home
             </Link>
             <Link 
               to="/new" 
-              className="bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg transition-colors"
+              className="bg-green-600 hover:bg-green-700 px-8 py-3 rounded-xl transition-colors font-medium shadow-lg hover:shadow-xl"
             >
               Add Creator
             </Link>

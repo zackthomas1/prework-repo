@@ -118,7 +118,7 @@ export default function AddCreator() {
           <button
             type="submit"
             disabled={loading}
-            className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-lg"
+            className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-4 rounded-xl transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-lg shadow-lg hover:shadow-xl"
           >
             {loading ? 'Adding Creator...' : 'Add Creator'}
           </button>

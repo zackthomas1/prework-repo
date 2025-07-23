@@ -48,7 +48,7 @@ export default function ViewCreator() {
             href={creator.url} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg transition-colors font-medium text-lg"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-xl transition-colors font-medium text-lg shadow-lg hover:shadow-xl"
           >
             Visit Creator's Page
           </a>
@@ -57,13 +57,13 @@ export default function ViewCreator() {
         <div className="flex justify-center gap-4">
           <Link 
             to={`/edit/${id}`} 
-            className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-colors font-medium"
+            className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-xl transition-colors font-medium shadow-lg hover:shadow-xl"
           >
             Edit Creator
           </Link>
           <button 
             onClick={handleDelete} 
-            className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg transition-colors font-medium"
+            className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-xl transition-colors font-medium shadow-lg hover:shadow-xl"
           >
             Delete Creator
           </button>

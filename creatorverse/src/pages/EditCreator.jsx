@@ -145,7 +145,7 @@ export default function EditCreator() {
           <button
             type="submit"
             disabled={loading}
-            className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-lg"
+            className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-4 rounded-xl transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-lg shadow-lg hover:shadow-xl"
           >
             {loading ? 'Updating...' : 'Update Creator'}
           </button>
@@ -153,7 +153,7 @@ export default function EditCreator() {
           <button
             type="button"
             onClick={() => navigate(`/creators/${id}`)}
-            className="flex-1 bg-gray-600 hover:bg-gray-700 text-white font-medium px-6 py-4 rounded-lg transition-colors text-lg"
+            className="flex-1 bg-gray-600 hover:bg-gray-700 text-white font-medium px-6 py-4 rounded-xl transition-colors text-lg shadow-lg hover:shadow-xl"
           >
             Cancel
           </button>

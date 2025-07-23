@@ -24,7 +24,7 @@ export default function ShowCreators() {
       <p className="text-gray-300 mb-8 text-lg">No creators found. Add one to get started!</p>
       <Link 
         to="/new" 
-        className="inline-block bg-green-600 hover:bg-green-700 px-8 py-3 rounded-lg transition-colors font-medium"
+        className="inline-block bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl transition-colors font-medium text-lg shadow-lg hover:shadow-xl"
       >
         Add Your First Creator
       </Link>

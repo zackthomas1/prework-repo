@@ -23,7 +23,7 @@ export default function CreatorCard({ creator }) {
           href={creator.url} 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors text-sm font-medium text-center"
+          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-xl transition-colors font-medium text-center shadow-md hover:shadow-lg"
         >
           Visit Creator
         </a>
@@ -31,13 +31,13 @@ export default function CreatorCard({ creator }) {
         <div className="flex gap-2">
           <Link 
             to={`/creators/${creator.id}`} 
-            className="flex-1 bg-gray-600 hover:bg-gray-700 text-white px-3 py-2 rounded text-sm transition-colors text-center"
+            className="flex-1 bg-gray-600 hover:bg-gray-700 text-white px-3 py-3 rounded-xl transition-colors text-center font-medium shadow-md hover:shadow-lg"
           >
             View Details
           </Link>
           <Link 
             to={`/edit/${creator.id}`}
-            className="flex-1 bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded text-sm transition-colors text-center"
+            className="flex-1 bg-green-600 hover:bg-green-700 text-white px-3 py-3 rounded-xl transition-colors text-center font-medium shadow-md hover:shadow-lg"
           >
             Edit
           </Link>
